@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Setup
 
-## Getting Started
+A brief description of the project goes here.
 
-First, run the development server:
+## Project Creation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# Step 1: Create a new Next.js project
+npx create-next-app@latest
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Step 2: Install development dependencies
+npm i -D prettier eslint-config-prettier eslint-plugin-prettier
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Step 3: Install prettier-plugin-tailwindcss
+npm add -D prettier-plugin-tailwindcss
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Step 4: Remove existing content from app/page.tsx and write your own code
 
-## Learn More
+# Step 5: Modify app/layout.tsx for meta data related to your project
 
-To learn more about Next.js, take a look at the following resources:
+# Step 6: Remove unnecessary content from app/global.css and keep the Tailwind CSS directives
+	- @tailwind base;
+	- @tailwind components;
+	- @tailwind utilities;
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Step 7: Create the required folders inside the app directory
+mkdir app/components app/api app/types
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Step 8: Create a pages folder in the root directory
+mkdir pages
 
-## Deploy on Vercel
+# Step 9: Install ESLint and Prettier extensions in your code editor vsc
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Step 10: Update .eslintrc.json with the configuration
+	{
+	  "extends": ["next", "prettier"]
+	}
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Step 11: Create .prettierrc.json and update it with your desired configuration
